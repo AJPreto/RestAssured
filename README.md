@@ -25,54 +25,54 @@ A FastAPI booking system for restaurants.
 - RestAssured_menu.py - functions useful for the "menu" section
 
 # Endpoints
-## Home - "/" - simple introduction to the software
+- Home - "/" - simple introduction to the software
 
-## Documentation - "/docs" - FastAPI automatically generated interactive display of all the endpoints
+- Documentation - "/docs" - FastAPI automatically generated interactive display of all the endpoints
 
-## Booking - "/booking/" - when adding the input_date afterwards, it attempts to book a reservation, and outputs the reserved table
+- Booking - "/booking/" - when adding the input_date afterwards, it attempts to book a reservation, and outputs the reserved table
  - input_date
 
-## Update Booking - "/update-booking/" - allows the update of a previously booked reservation, by first inserting the new one and later delete the previous
+- Update Booking - "/update-booking/" - allows the update of a previously booked reservation, by first inserting the new one and later delete the previous
  - input_old_date
  - input_old_table_number
  - input_new_date
  - input_new_table_number 
 
-## Cancel Booking - "/cancel-booking/" - allows the cancellation of a previously booked reservation
+- Cancel Booking - "/cancel-booking/" - allows the cancellation of a previously booked reservation
  - input_old_date
  - input_old_table_number
 
-## Booking overview - "/booking-overview/" - show all the booked reservations
+- Booking overview - "/booking-overview/" - show all the booked reservations
 
-## Table availability - "/table-availability/" - shows the available tables for a given date
+- Table availability - "/table-availability/" - shows the available tables for a given date
  - input_date
  - input_table_number 
 
-## Extend Menu - "/extend-menu/" - add new products to the menu, with respective prices
+- Extend Menu - "/extend-menu/" - add new products to the menu, with respective prices
  - input_product
  - input_price
 
-## Update Menu - "/update-menu/" - update an entry in the menu
+- Update Menu - "/update-menu/" - update an entry in the menu
  - input_product
  - input-price
 
-## Remove Menu - "/remove-menu/" - remove an entry from the menu
+- Remove Menu - "/remove-menu/" - remove an entry from the menu
  - input_product
 
-## Menu Overview - "/menu-overview/" - displays the whole menu
+- Menu Overview - "/menu-overview/" - displays the whole menu
 
-## New Order - "/new-order/" - allows the ordering of products for a table
+- New Order - "/new-order/" - allows the ordering of products for a table
  - input_products
  - input_table
 
-## Update Order Cooking - "/update-order-cooking/" - updates the order to cooking status
+- Update Order Cooking - "/update-order-cooking/" - updates the order to cooking status
  - input_table
 
-## Update Order Ready - "/update-order-ready/" - updates the order to ready status
+- Update Order Ready - "/update-order-ready/" - updates the order to ready status
  - input_table
 
-## Update Order paid - "/update-order-paid/" - updates the order to cooking status
+- Update Order paid - "/update-order-paid/" - updates the order to cooking status
  - input_table
 
-## Orders Overview - "/orders-overview/" - shows the order, depending on order motif
+- Orders Overview - "/orders-overview/" - shows the order, depending on order motif
  - order_motif
